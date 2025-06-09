@@ -122,7 +122,7 @@ function loop(){
     // Desenhar texto fixo brilhante ainda mais abaixo do coração
     a.save();
     a.globalAlpha = textoAlpha;
-    a.font = `bold ${30 * scale}px Arial`;
+    a.font = `bold ${10 * scale}px Arial`;
     a.textAlign = "center";
     a.textBaseline = "middle";
     let grad = a.createLinearGradient(O/2-200, Q/2+220, O/2+200, Q/2+220);
@@ -130,7 +130,7 @@ function loop(){
     grad.addColorStop(0.5, "#fff");
     grad.addColorStop(1, "#ff69b4");
     a.shadowColor = "#ff69b4";
-    a.shadowBlur = 30;
+    a.shadowBlur = 3;
     a.fillStyle = grad;
     a.fillText("Lara te amo", O/2, Q/2+220);
     a.restore();
