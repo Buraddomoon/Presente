@@ -122,7 +122,7 @@ function loop(){
     // Desenhar texto fixo brilhante ainda mais abaixo do coração
     a.save();
     a.globalAlpha = textoAlpha;
-    a.font = `bold ${10 * scale}px Arial`;
+    a.font = `bold ${30 * scale}px Arial`;
     a.textAlign = "center";
     a.textBaseline = "middle";
     let grad = a.createLinearGradient(O/2-200, Q/2+220, O/2+200, Q/2+220);
